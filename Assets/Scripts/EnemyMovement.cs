@@ -14,6 +14,7 @@ public class EnemyMovement : MonoBehaviour
     public void SetMoveData(SimpleEnemyMoveData moveData)
     {
         this.moveData = moveData;
+        transform.position = moveData.GetStartPoint();
     }
 
     private void FixedUpdate()

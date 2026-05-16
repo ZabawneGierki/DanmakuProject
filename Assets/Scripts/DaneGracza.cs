@@ -18,6 +18,6 @@ public enum Difficulty
 public static class DaneGracza
 {
     public static CharacterName characterName = CharacterName.Reimu;
-    public static Difficulty difficulty = Difficulty.Easy;
+    public static Difficulty difficulty = Difficulty.Normal;
 
 }

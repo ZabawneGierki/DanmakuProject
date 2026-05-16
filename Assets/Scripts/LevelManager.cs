@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,7 +11,6 @@ public class LevelManager : MonoBehaviour
     List<Wave> waves = new List<Wave>();
 
     private Queue<Wave> waveQueue = new Queue<Wave>();
-
 
 
     private void Awake()
@@ -45,7 +43,9 @@ public class LevelManager : MonoBehaviour
         if (waveQueue.Count > 0)
         {
             Wave nextWave = waveQueue.Dequeue();
+
             Instantiate(nextWave, Vector2.zero, Quaternion.identity);
+
         }
         else
         {

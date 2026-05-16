@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Wave : MonoBehaviour
+public class SimpleFala :    Wave
 {
     [Header("Wave Settings")]
     public GameObject enemyPrefab;
@@ -13,7 +13,7 @@ public class Wave : MonoBehaviour
     void Start()
     {
 
-        StartCoroutine(SpawnEnemies());
+        PlayWave();
 
 
 
@@ -46,5 +46,10 @@ public class Wave : MonoBehaviour
         {
             enemyMovement.SetMoveData(moveData);
         }
+    }
+
+    public void PlayWave()
+    {
+        StartCoroutine(SpawnEnemies());
     }
 }

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 993630f921777e542a1728cef0fec112, type: 3}
   m_Name: SimpleEnemyMoveData
   m_EditorClassIdentifier: Assembly-CSharp::SimpleEnemyMoveData
-  StartPoint: {x: 0, y: 0}
-  EndPoint: {x: 0, y: 0}
+  StartPoint: {x: -4, y: 2}
+  EndPoint: {x: 6.26, y: 2.79}
